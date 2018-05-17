@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Bootstrap3</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<style type="text/css">
+    body {
+        
+		padding-bottom: 130px;
+    }
+	</style>
+	</head>
+	<body>
+		
+		
+		<div class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+				<a href="#" class="navbar-brand">Tech Site</a>
+				
+				<button class = "navbar-toggle" data-toggle= "collapse" data-target= ".navHeaderCollpase">
+				<span class="icon-bar"></span><!--for three lines called as bar-->
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				</div>
+				<div class="collapse navbar-collapse navHeaderCollpase">
+				
+				
+				
+					<ul class="nav navbar-nav navbar-right">
+					
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="#contact" data-toggle="modal">Contact</a></li><!--change  for modal-->
+							<li><a href="#">About</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Google+</a></li>
+									
+									
+								</ul>
+							
+							</li>
+					
+					</ul>
+				</div>
+				
+			
+				
+			</div>
+		
+		</div>
+		
+		
+		
+		<div class="container">
+				<div class="row">
+					<div class="col-lg-9">
+					
+						<div class="panel panel-default">
+						
+							<div class="panel-body">
+								<div class="page-header">
+									<h3>Whatever you want <small>Posted on 4th July</small></h3>
+								</div>
+								<img class="featureImg" src="img/img.jpg" width="100%" >
+								
+								<p>Pit bull is the common name for a type of dog. Formal breeds often considered in North America to be of the pit bull type include the American Pit Bull Terrier, American Staffordshire Terrier, and Staffordshire Bull Terrier.[1] The American Bulldog is also sometimes included. Many of these breeds were originally developed as fighting dogs from cross breeding bull-baiting dogs (used to hold the faces and heads of larger animals such as bulls) and terriers.[2] After the use of dogs in blood sports was banned, such dogs were used as catch dogs in the United States for semi-wild cattle and hogs, to hunt and drive livestock, and as family companions,[3] although some owners still bred and used them for illegal d</p>
+								
+								<h4>A heading</h4>
+								<p>Pit bull is the common name for a type of dog. Formal breeds often considered in North America to be of the pit bull type include the American Pit Bull Terrier, American Staffordshire Terrier, and Staffordshire Bull Terrier.[1] The American Bulldog is also sometimes included. Many of these breeds were originally developed as fighting dogs from cross breeding bull-baiting dogs (used to hold the faces and heads of larger animals such as bulls) and terriers.[2] After the use of dogs in blood sports was banned, such dogs were used as catch dogs in the United States for semi-wild cattle and hogs, to hunt and drive livestock, and as family companions,[3] although some owners still bred and used them for illegal d</p>
+							</div>
+							
+						
+						
+						</div>
+					</div>
+					
+					<!--side bar code-->
+					<div class="col-lg-3">
+						<div class="list-group">
+							<a href="#" class="list-group-item active">
+								<h4>Lorel Ipsum</h4>
+								<p>Heelo hsdtfuishdfsgduif</p>
+							</a>
+							<a href="#" class="list-group-item ">
+								<h4>Lorel Ipsum</h4>
+								<p>Heelo hsdtfuishdfsgduif</p>
+							</a>
+							<a href="#" class="list-group-item ">
+								<h4>Lorel Ipsum</h4>
+								<p>Heelo hsdtfuishdfsgduif</p>
+							</a>
+
+						</div>
+					
+					</div>
+					
+					
+				</div>
+		</div>
+		
+		
+		<!--footer-->
+		<div class="navbar  navbar-fixed-bottom navbar-default">
+			<div class="container">
+			<p class="navbar-text pull-left">Made by SK</p>
+			<a href="#" class="navbar-btn btn-danger btn pull-right">Subscribe to Youtube</a>
+			</div>
+		</div>
+		
+		<!--modal-->
+		<div class="modal fade" id="contact" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<!--form changes-->
+				<form class="form-horizontal">
+					<div class="modal-header">
+						<h1>Contact Form</h1>
+					</div>
+					<div class="modal-body">
+						<!--<p>Body of modal</p>-->
+						<div class="form-group">
+							<label for="contact-name" class="col-lg-2 control-label">Name:</label>
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+								<!--inlabel whatever for="value" is should be same as id in input field  repeat div class form group for various 
+									form context-->
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="contact-email" class="col-lg-2 control-label">Name:</label>
+							<div class="col-lg-10">
+								<input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+								<!--inlabel whatever for="value" is should be same as id in input field  repeat div class form group for various 
+									form context here "contact-email "-->
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="contact-msg" class="col-lg-2 control-label">Message:</label>
+							<div class="col-lg-10">
+							
+							<textarea class="form-control" rows="10"></textarea>
+							
+							</div>
+						</div>
+						
+						
+					</div>
+					<div class="modal-footer">
+						<!--<p>Footer of modal</p>-->
+						<a class="btn btn-default" data-dismiss="modal">Close</a>
+						<a class="btn btn-primary" type="submit">Submit</a>
+					</div>
+				</form>
+				
+				</div>
+			
+			
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</body>
+
+</html>
